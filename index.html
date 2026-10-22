@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InventoryPro | Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark app-navbar">
+  <div class="container-fluid px-lg-4">
+    <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">I</span> InventoryPro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="suppliers.html">Suppliers</a></li>
+        <li class="nav-item"><a class="nav-link" href="report.html">Stock Report</a></li>
+      </ul>
+      <a class="btn btn-outline-light btn-sm" href="login.html">Log out demo</a>
+    </div>
+  </div>
+</nav>
+<main class="container-fluid px-lg-4 py-4">
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div><p class="eyebrow mb-1">OVERVIEW</p><h1 class="page-title mb-1">Dashboard</h1><p class="text-secondary mb-0">Welcome back! Here’s what’s happening in your store.</p></div>
+    <a href="product-form.html" class="btn btn-primary">+ Add product</a>
+  </div>
+  <div class="row g-3 mb-4">
+    <div class="col-12 col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-top"><span>Total products</span><span class="stat-icon blue">▦</span></div><div class="stat-number">248</div><div class="stat-foot">Across all categories</div></div></div>
+    <div class="col-12 col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-top"><span>Stock units</span><span class="stat-icon green">↗</span></div><div class="stat-number">3,482</div><div class="stat-foot">Units currently available</div></div></div>
+    <div class="col-12 col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-top"><span>Stock value</span><span class="stat-icon purple">₹</span></div><div class="stat-number">₹8.42L</div><div class="stat-foot">Estimated inventory value</div></div></div>
+    <div class="col-12 col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-top"><span>Low stock alerts</span><span class="stat-icon orange">!</span></div><div class="stat-number">12</div><div class="stat-foot"><span class="text-danger">Needs attention</span> · reorder soon</div></div></div>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-xl-8"><section class="panel h-100"><div class="panel-heading"><div><h2 class="section-title">Recently added products</h2><p class="text-secondary small mb-0">A quick look at your latest inventory</p></div><a class="small fw-semibold" href="products.html">View all</a></div>
+      <div class="table-responsive"><table class="table align-middle app-table mb-0"><thead><tr><th>Product</th><th>SKU</th><th>Category</th><th>Quantity</th><th>Price</th></tr></thead><tbody>
+      <tr><td><div class="product-cell"><span class="product-avatar av-blue">EP</span><span><strong>Epson EcoTank Printer</strong><small>Added today</small></span></div></td><td>PRD-1001</td><td>Electronics</td><td><span class="quantity-pill good">24 units</span></td><td>₹14,500</td></tr>
+      <tr><td><div class="product-cell"><span class="product-avatar av-violet">KB</span><span><strong>Wireless Keyboard</strong><small>Added yesterday</small></span></div></td><td>PRD-1002</td><td>Accessories</td><td><span class="quantity-pill low">4 units</span></td><td>₹1,250</td></tr>
+      <tr><td><div class="product-cell"><span class="product-avatar av-green">NB</span><span><strong>Notebook A4 Pack</strong><small>Added 2 days ago</small></span></div></td><td>PRD-1003</td><td>Stationery</td><td><span class="quantity-pill good">86 units</span></td><td>₹180</td></tr>
+      <tr><td><div class="product-cell"><span class="product-avatar av-orange">MS</span><span><strong>Wireless Mouse</strong><small>Added 3 days ago</small></span></div></td><td>PRD-1004</td><td>Accessories</td><td><span class="quantity-pill low">6 units</span></td><td>₹650</td></tr>
+      </tbody></table></div>
+    </section></div>
+    <div class="col-12 col-xl-4"><section class="panel h-100"><div class="panel-heading"><div><h2 class="section-title">Low stock alerts</h2><p class="text-secondary small mb-0">Items below reorder level</p></div><span class="alert-count">12</span></div>
+      <div class="alert-row"><span class="product-avatar av-violet">KB</span><div class="flex-grow-1"><strong>Wireless Keyboard</strong><small>Accessories</small></div><span class="text-danger fw-semibold small">4 left</span></div>
+      <div class="alert-row"><span class="product-avatar av-orange">MS</span><div class="flex-grow-1"><strong>Wireless Mouse</strong><small>Accessories</small></div><span class="text-danger fw-semibold small">6 left</span></div>
+      <div class="alert-row"><span class="product-avatar av-blue">HD</span><div class="flex-grow-1"><strong>HDMI Cable 2m</strong><small>Electronics</small></div><span class="text-danger fw-semibold small">3 left</span></div>
+      <a href="report.html" class="btn btn-light border w-100 mt-3">Open stock report →</a>
+    </section></div>
+  </div>
+  <p class="demo-note mt-4 mb-0">Student project demo · Sample data only · Static HTML version</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
